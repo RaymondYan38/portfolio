@@ -10,11 +10,11 @@ const Experience = () => {
       description: [
         {
           id: 1,
-          text: "Accomplished migration of the NPO Cell Dog’s (dog rehabilitation program) Google Sheets spreadsheet to a website for employees to easily create, update, and find relevant information, using PostgreSQL/Express/React/Node.js.",
+          text: "Accomplished migration of the NPO Cell Dog’s (dog rehabilitation program) Google Sheets spreadsheet to a website for employees to easily create, update, and find relevant information, using PostgreSQL, Express, React, and Node.js.",
         },
         {
           id: 2,
-          text: "Implemented various features including Backend Provider, Frontend Routing, Integration of Backend to Frontend, Navbar, 404 page, Login/Forgot Password pages with Firebase auth, Card view of components from multiple pages, and Mobile view of multiple pages, resulting in a more efficient and user-friendly experience.",
+          text: "Implemented various features including Backend Provider, Login/Forgot Password pages with Firebase auth, Integration of Backend to Frontend, Frontend Routing, Navbar, and various viewing options for multiple pages such as Desktop and Mobile view, resulting in a more efficient and user-friendly experience.",
         },
       ],
     },

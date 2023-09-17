@@ -3,8 +3,37 @@ import React from "react";
 const Projects = () => {
   const projects = [
     {
+      id: 0,
+      title: "Anteater Sublease Finder",
+      tech: ["MongoDB", "Express.js", "React.js", "Node.js", "Tailwind CSS"],
+      date: "September 2023 - Present",
+      description: [
+        {
+          id: 1,
+          text: "Developing a full-stack web application using the MERN stack to empower students in sharing and discovering subleases.",
+        },
+      ],
+    },
+    {
       id: 1,
+      title: "Pokemon Team Builder",
+      tech: ["React.js", "Tailwind CSS"],
+      date: "August 2023 - September 2023",
+      description: [
+        {
+          id: 1,
+          text: "Created a comprehensive Pokemon team building application leveraging React and Tailwind CSS, catering to all mainline Pokemon games.",
+        },
+        {
+          id: 2,
+          text: "Implemented a robust team analysis tool enabling users to identify strengths and weaknesses within their teams for both offensive and defensive strategies.",
+        },
+      ],
+    },
+    {
+      id: 2,
       title: "Blog Application",
+      tech: ["MongoDB", "Express.js", "React.js", "Node.js"],
       date: "Winter 2023",
       description: [
         {
@@ -14,8 +43,9 @@ const Projects = () => {
       ],
     },
     {
-      id: 2,
+      id: 3,
       title: "Valorant Stats Discord Bot",
+      tech: ["Python", "Selenium", "Discord"],
       date: "Summer 2022",
       description: [
         {
@@ -25,8 +55,9 @@ const Projects = () => {
       ],
     },
     {
-      id: 3,
+      id: 4,
       title: "Zot Point Average",
+      tech: ["Javascript", "HTML", "CSS"],
       date: "Zot Hacks Winner 2021",
       description: [
         {
