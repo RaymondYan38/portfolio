@@ -3,7 +3,7 @@ import React from "react";
 const Projects = () => {
   const projects = [
     {
-      id: 0,
+      id: 1,
       title: "Anteater Sublease Finder",
       tech: ["MongoDB", "Express.js", "React.js", "Node.js", "Tailwind CSS"],
       date: "September 2023 - Present",
@@ -15,7 +15,7 @@ const Projects = () => {
       ],
     },
     {
-      id: 1,
+      id: 2,
       title: "Pokemon Team Builder",
       tech: ["React.js", "Tailwind CSS"],
       date: "August 2023 - September 2023",
@@ -31,7 +31,7 @@ const Projects = () => {
       ],
     },
     {
-      id: 2,
+      id: 3,
       title: "Blog Application",
       tech: ["MongoDB", "Express.js", "React.js", "Node.js"],
       date: "Winter 2023",
@@ -43,7 +43,7 @@ const Projects = () => {
       ],
     },
     {
-      id: 3,
+      id: 4,
       title: "Valorant Stats Discord Bot",
       tech: ["Python", "Selenium", "Discord"],
       date: "Summer 2022",
@@ -55,7 +55,7 @@ const Projects = () => {
       ],
     },
     {
-      id: 4,
+      id: 5,
       title: "Zot Point Average",
       tech: ["Javascript", "HTML", "CSS"],
       date: "Zot Hacks Winner 2021",
@@ -70,8 +70,9 @@ const Projects = () => {
 
   return (
     <div
-      name="projects"
-      className="bg-gradient-to-b from-black to-gray-800 w-full text-white md:h-screen"
+      id="projects"
+      // name="projects"
+      className="bg-gradient-to-b from-black to-gray-800 w-full text-white p-16" // might need to adjust padding whenever updating data for some reason
     >
       <div className="max-w-screen-lg p-4 mx-auto flex flex-col justify-center w-full h-full">
         <div className="pb-8">
@@ -81,12 +82,15 @@ const Projects = () => {
           <p className="py-6">Check out some of my work right here</p>
         </div>
         <div className="-mt-20">
-          {projects.map(({ id, title, date, description }) => (
+          {projects.map(({ id, title, date, description, tech }) => (
             <div
               key={id}
               className="mt-10 border border-gray-600 rounded-xl p-4"
             >
-              <div className="text-xl font-semibold">{title}</div>
+              <div className="text-xl font-semibold">
+                {title} |{" "}
+                <span className="italic font-light">{tech.join(", ")}</span>
+              </div>
               <div className="text-lg italic">{date}</div>
               <div className="border-b mb-1" />
               {description.map(({ id, text }) => (
